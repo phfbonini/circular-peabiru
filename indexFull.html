@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Peabiru</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.33) 2px 3.5px 2px;
+}
+
+#assinatura-mobile{
+  display: none;
+}
+main{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main div h1{
+  font-size: 4vh;
+  text-transform: uppercase;
+  color: #f9b600;
+  text-align: center;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
+
+.buttons button{
+  margin-top: 2vh;
+  background-color: #17256b; /* Green */
+  border: none;
+  color: white;
+  padding: 2vh 12vw;
+
+  text-decoration: none;
+ 
+  font-size: 4vh;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #assinatura-desktop{
+  font-size: 1.4vh;
+  margin-top: 10vh;
+}
+
+body{
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+
+nav {
+  font-size: 2vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #17256b;
+  height: 8vh;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+a{
+  text-shadow: rgba(0, 0, 0, 0.33) 2px 3.5px 2px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #18266b;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .nav-list li {
+    font-size: 1.8vh;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-left: 12%;
+    opacity: 0;
+    
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  #assinatura-mobile{
+  
+    display: inline;
+  }
+
+  #assinatura-desktop{
+    display: none;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html">Caminhos do Busão</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5544997731206">Fale conosco</a></li>
+          <li><a href="https://bit.ly/circular-peabiru">Nos ajude a continuar :)</a></li>
+          <li id="assinatura-mobile"><a href="https://www.linkedin.com/in/phfbonini/"> Desenvolvido por Pedro Bonini<></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>Horários Peabiru</h1>
+        <div class="buttons">
+          <button><a href="seg_sex_peabiru.html">Segunda a Sexta</a></button>
+          <button>Sábado</button>
+        </div>
+        <h1>Horários Campo Mourão</h1>
+        <div class="buttons">
+          <button>Segunda a Sexta</button>
+          <button>Sábado</button>
+        </div>
+      </div>
+      <a id="assinatura-desktop" href="https://www.linkedin.com/in/phfbonini/"> Desenvolvido Por Pedro Bonini</a>
+    </main>
+    <script>
+        class MobileNavbar {
+  constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  animateLinks() {
+    this.navLinks.forEach((link, index) => {
+      link.style.animation
+        ? (link.style.animation = "")
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
+    });
+  }
+
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  init() {
+    if (this.mobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav-list",
+  ".nav-list li",
+);
+mobileNavbar.init();
+
+    </script>
+  </body>
+</html>
