@@ -4,7 +4,7 @@
 
 ##
 
-<p>•|👨‍💻 Tecnologias utilizadas: </p>
+<p>•👨‍💻| Tecnologias utilizadas: </p>
 
 <div style="display: inline_block">
   
