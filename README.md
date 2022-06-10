@@ -18,7 +18,7 @@
 
 ##
 
-<p>•|🚍 Links do projeto: </p>
+<p>•🚍| Links do projeto: </p>
 <p>Instagram | Fale Conosco | Nos ajude a continuar</p>
 
 <div> 
