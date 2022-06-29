@@ -4,7 +4,7 @@
 
 ##
 
-<p>•|👨‍💻 Tecnologias utilizadas: </p>
+<p>•👨‍💻| Tecnologias utilizadas: </p>
 
 <div style="display: inline_block">
   
@@ -18,7 +18,7 @@
 
 ##
 
-<p>•|🚍 Links do projeto: </p>
+<p>•🚍| Links do projeto: </p>
 <p>Instagram | Fale Conosco | Nos ajude a continuar</p>
 
 <div> 
