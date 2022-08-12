@@ -138,7 +138,7 @@ a{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
   .nav-list li {
-    font-size: 1.8vh;
+    font-size: 3vh;
     margin-bottom: 20%;
     margin-top: 10%;
     margin-left: 12%;
@@ -185,3 +185,5 @@ a{
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+
+#map{width:500px;height:500px;background:#ddd;}

@@ -8,6 +8,7 @@
     <meta name="description" content="Site da Circular de Peabiru X Campo Mourão">
     <link rel="shortcut icon" href="images/icon.png">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn_E66tmMLv7GRNmOMt5r-NjQjkE2idyM&callback=initMap" async defer></script>
   </head>
 
   <body>
@@ -32,11 +33,11 @@
         <h1>Saída de Peabiru</h1>
         <h1>Segunda a Sexta</h1>
         <div class="buttons">
-          <a href=""><button>06:30</button></a>
-          <a href=""><button>07:10</button></a>
-          <a href=""><button>08:20</button></a>
-          <a href=""><button>13:00</button></a>
-          <a href=""><button>17:30</button></a>
+          <a href=""><button onclick="onMap()" value="1">06:30</button></a>
+          <a href=""><button onclick="onMap()" value="1">07:10</button></a>
+          <a href=""><button onclick="onMap()" value="2">08:20</button></a>
+          <a href=""><button onclick="onMap()" value="1">13:00</button></a>
+          <a href=""><button onclick="onMap()" value="2">17:30</button></a>
         </div>
       </div>
       <a id="assinatura-desktop" href="https://www.linkedin.com/in/phfbonini/"> Desenvolvido Por Pedro Bonini</a>
